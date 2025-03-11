@@ -1,9 +1,9 @@
-name: 'build docker image'
+name: 'build and deploy docker image'
 
 on:
   push:
     tags:
-      - '*'  # Trigger บนทุก tag ที่ push
+      - '*'  # Trigger เมื่อ push tag ใด ๆ
 
 jobs:
   release-docker-image-job:
